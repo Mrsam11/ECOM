@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ecom</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ecom<span class="blue-dot">.</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Latest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <input
+              class="me-2 search"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <span class="icons">
+              <a title="icon" href="cart.html">
+                <i class="fas fa-shopping-cart fa-1x icon"></i>
+              </a>
+              <span class="icon-count">04</span>
+              <i class="far fa-heart icon text-danger"></i>
+              <span class="icon-count">08</span>
+            </span>
+            <button
+              class="btn-1"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              type="button"
+            >
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section>
+        <div class="container">
+            <h1 class="mb-5 mt-5 categories text-center">Shopping Cart</h1>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Products</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="images/5.jpg" class="cart-image mt-3 ms-3" alt="">
+                    </td>
+                    <td>
+                        <input title="checkout" type="number" class="input-num" value="1" min="1">
+                    </td>
+                    <td>$15</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/9.jpg" class="cart-image mt-3 ms-3" alt="">
+                    </td>
+                    <td>
+                        <input title="checkout" type="number" class="input-num" value="1" min="1">
+                    </td>
+                    <td>$10</td>
+                    <td>$29</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/11.jpg" class="cart-image mt-3 ms-3" alt="">
+                    </td>
+                    <td>
+                        <input title="checkout" type="number" class="input-num" value="1" min="1">
+                    </td>
+                    <td>$25</td>
+                    <td>$32</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    </section>
+    <section class="container">
+        <div class=" text-end ms-md-3 check">
+            <h3> Subtotal - $57</h3>
+            <h3> Tax(6%) - $64</h3>
+            <h3> Shipping - Free</h3>
+            <hr>
+            <h3> Total - $64</h3>
+            <button type="button" class="btn-1 btn-c mb-3 mt-3 btn-outline-info ">Check Out</button>
+        </div>
+    </section>
+
+
+
+
+
+
+    <div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label>Name</label>
+          <input type="text" class="form-control" placeholder="Your Name" />
+          <label>Email</label>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="abc@xyz.com"
+          />
+          <label>Phone Number</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Phone Number"
+          />
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Sign in</button>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="mt-5">
+    <h1>Ec<span class="blue-dot">om.</span></h1>
+    <p>&copy 2021</p>
+    </footer>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+crossorigin="anonymous"
+></script>
+</body>
+</html>
